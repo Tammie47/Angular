@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <hr>
+      <label> UserName</label>
+      <input
+        [(ngModel)]="userName"
+        class="input-sm"
+        type="text">
+      <p>{{userName}}</p>
+
+      <button (click)="onReset()"
+              [disabled]="!userName"
+              class="btn btn-primary"> Reset
+      </button>
+    </div>
+  </div>
+</div>
+
+
